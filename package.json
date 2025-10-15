@@ -1,0 +1,21 @@
+{
+  "name": "merchmagic",
+  "private": true,
+  "packageManager": "pnpm@8.15.4",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "start": "pnpm --filter web start",
+    "lint": "pnpm --filter web lint",
+    "typecheck": "pnpm --filter web typecheck"
+  },
+  "pnpm": {
+    "packageExtensions": {
+      "fabric@*": {
+        "dependencies": {
+          "canvas": "^2.11.2"
+        }
+      }
+    }
+  }
+}
